@@ -1,0 +1,13 @@
+.navMyclass {
+  margin-top: 10px;
+  background-color: #efa832;
+  padding: 15px 0px;
+}
+.linkMyClass:hover {
+  color: white;
+  background-color: #007bff;
+}
+.linkActivMyClass:active {
+  color: white;
+  background-color: #007bff;
+}

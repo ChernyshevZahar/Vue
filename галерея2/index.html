@@ -9,21 +9,19 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <style>
-      .Listen {
-        width: 40%;
-      }
-    </style>
-    <title>Listen</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Galery</title>
   </head>
   <body>
     <div class="container">
-      <div id="listen" class="Listen">
-        <ul v-for="user in users" class="list-group">
-          <li class="list-group-item list-group-item-action">
-            {{user}}
-          </li>
-        </ul>
+      <div id="galery">
+        <!--Компонент галереи  -->
+        <galery
+          v-for="card in cards"
+          :key="card.id"
+          :card="card"
+          class="Galery"
+        ></galery>
       </div>
     </div>
 
